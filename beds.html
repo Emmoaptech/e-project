@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" referrerpolicy="no-referrer" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    footer{
+       margin-top: 100px;
+       background-color: darkseagreen;
+       color: black;
+   }
+   .footer{
+       display: flex;
+       justify-content: space-around;
+   }
+   
+   .footer ul li{
+       text-decoration: none;
+       list-style: none;
+       margin-top: 20px;
+       margin-right: 100px;
+   }
+   .footer a{
+       color: white;
+       text-decoration: solid;
+   }
+   .awe{
+     text-align: center;
+     margin-top: 30px;
+     margin-left: -20px;
+   }
+   i{
+     padding: 10px;
+     font-size: 30px;
+   }
+   .awe a{
+     color: white;
+   }
+   .awesome i{
+     padding: 30px;
+     font-size: 15px;
+   }
+   .awesome{
+     color: white;
+   }
+   *{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+   </style>
+<body>
+    <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <a style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+          font-size: 30px; margin-left: 40px; font-weight: bolder; color: darkseagreen;" class="navbar-brand" href="#">HUDSON FURNISHING</a>
+           <form style="margin-bottom:12px; margin-left:-300px;" class="d-flex mt-3" role="search">
+            <input style="width:400px;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button style="background-color:darkseagreen; color: white; border:none; text-align: center;" class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <button style="color:darkseagreen ;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div style="color:darkseagreen;" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HUDSON FURNISHING</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <ul style="margin-top:80px; background-color: darkseagreen;"  class="nav justify-content-center">
+        <li class="nav-item">
+          <a style="color:white; padding-right:50px;" class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:white;  padding-right:50px;" class="nav-link" href="#">Store</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:white;  padding-right:50px;" class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a style="color:white;  padding-right:50px;" class="nav-link" href="#">Sign Up</a>
+          </li>
+       </ul>
+
+
+       <div>
+
+        <div class="card" style="width: 18rem; height: 400px; margin-left:250px;">
+          <img src="NA1.jpg" height="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text">Fusion Media Unit</h5><br>
+            <h5 style="color: darkseagreen;">PKR  21,999</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 400px; margin-left:630px; margin-top:-400px;">
+          <img src="NA2.webp" height="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text">Royal Wing Chair in Blue Color</h5><br>
+            <h5 style="color: darkseagreen;">PKR  24,999</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 400px; margin-left:1000px; margin-top: -400px;">
+          <img src="NA3.jpg" height="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text">6 Seater Dining Table</h5><br>
+            <h5 style="color: darkseagreen;">PKR  49,999</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 400px; margin-left:250px; margin-top: 100px;">
+          <img src="NA4.jpg" height="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text">6 Drawer Solid Wood Dresser</h5><br>
+            <h5 style="color: darkseagreen;">PKR  31,499</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 400px; margin-left:630px; margin-top:-400px;">
+          <img src="NA5.webp" height="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text">Bamboo Chair</h5><br>
+            <h5 style="color: darkseagreen;">PKR  4,999</h5>
+          </div>
+        </div>
+        
+        <div class="card" style="width: 18rem; height: 400px; margin-left:1000px; margin-top: -400px;">
+          <img src="NA6.webp" height="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text">Custom made wooden Entertainment Unit</h5><br>
+            <h5 style="color: darkseagreen;">PKR  19,999</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 400px; margin-left:250px; margin-top: 100px;">
+          <img src="NA4.jpg" height="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text">6 Drawer Solid Wood Dresser</h5><br>
+            <h5 style="color: darkseagreen;">PKR  31,499</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 400px; margin-left:630px; margin-top:-400px;">
+          <img src="NA5.webp" height="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text">Bamboo Chair</h5><br>
+            <h5 style="color: darkseagreen;">PKR  4,999</h5>
+          </div>
+        </div>
+        
+        <div class="card" style="width: 18rem; height: 400px; margin-left:1000px; margin-top: -400px;">
+          <img src="NA6.webp" height="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text">Custom made wooden Entertainment Unit</h5><br>
+            <h5 style="color: darkseagreen;">PKR  19,999</h5>
+          </div>
+        </div>
+  
+          <div class="card" style="width: 18rem; height: 400px; margin-left:250px; margin-top: 100px;">
+            <img src="NA4.jpg" height="250px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-text">6 Drawer Solid Wood Dresser</h5><br>
+              <h5 style="color: darkseagreen;">PKR  31,499</h5>
+            </div>
+          </div>
+  
+          <div class="card" style="width: 18rem; height: 400px; margin-left:630px; margin-top:-400px;">
+            <img src="NA5.webp" height="250px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-text">Bamboo Chair</h5><br>
+              <h5 style="color: darkseagreen;">PKR  4,999</h5>
+            </div>
+          </div>
+          
+          <div class="card" style="width: 18rem; height: 400px; margin-left:1000px; margin-top: -400px;">
+            <img src="NA6.webp" height="250px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-text">Custom made wooden Entertainment Unit</h5><br>
+              <h5 style="color: darkseagreen;">PKR  19,999</h5>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 400px; margin-left:250px; margin-top: 100px;">
+            <img src="NA4.jpg" height="250px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-text">6 Drawer Solid Wood Dresser</h5><br>
+              <h5 style="color: darkseagreen;">PKR  31,499</h5>
+            </div>
+          </div>
+  
+          <div class="card" style="width: 18rem; height: 400px; margin-left:630px; margin-top:-400px;">
+            <img src="NA5.webp" height="250px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-text">Bamboo Chair</h5><br>
+              <h5 style="color: darkseagreen;">PKR  4,999</h5>
+            </div>
+          </div>
+          
+          <div class="card" style="width: 18rem; height: 400px; margin-left:1000px; margin-top: -400px;">
+            <img src="NA6.webp" height="250px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-text">Custom made wooden Entertainment Unit</h5><br>
+              <h5 style="color: darkseagreen;">PKR  19,999</h5>
+            </div>
+          </div>
+  
+          
+
+        </div><br><br><br><br><br><br>
+
+        <hr style="color:darkseagreen; width:1450px; border:solid 1px; margin-left:35px;"><br><br><br><br><br>
+
+        <hr style="color:darkseagreen; width:1450px; border:solid 1px; margin-left:35px;">
+
+
+
+       <footer>
+        <div class="footer">
+         
+            <div>
+                <ul>
+                  <h3 style="margin-top:50px; color: white;">INFORMATION</h3>
+                    <a href=""><li>About Us</li></a>
+                    <a href=""><li>Payments</li></a>
+                    <a href=""><li>Shipping</li></a>
+                    <a href="dealer.html"><li>Authorized Dealers</li></a>
+                   
+                </ul>
+            </div>  
+            <div>
+              <ul>
+                <h3 style="margin-top:50px; color:white;">POLICY</h3>
+                <a href=""><li>Terms of Use</li></a>
+                <a href=""><li>Privacy Policy</li></a>
+              </ul>
+            </div>              
+            <div>
+                <ul>
+                  <h3 style="margin-top:50px; color: white;">CONTACT INFO</h3>
+                    <a href=""><li>021-111-007-007</li></a>
+                    <a href=""><li>complaints@hudson.com</li></a>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                  <h3 style="margin-top:50px; color: white;">FOLLOW US</h3>
+                    <div class="awe">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest"></i></i></a>
+                    </div><br><br>
+                    <p style="color:white;">Subscribe to our newsletter <br>to get the latest news<br> and
+                     product updates directly<br> to
+                    your email. Just a<br> second to subscribe today.
+
+                    </p>
+                    <div>
+                      <h5 style="color:white;">Rate Us</h5>
+                      <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div>
+                    </div>
+                </ul>
+            </div>   
+
+          
+        </div>
+  
+         <br><br><br>
+          <hr style="color:white; width:1450px; border:solid 2px; margin-left:35px;">
+  
+        <div class="awesome">
+          <i class="fa-regular fa-copyright"></i>
+          Hudson Furniture 2022. All Right Reserved
+        </div>
+    </footer>
+</body>
+</html>

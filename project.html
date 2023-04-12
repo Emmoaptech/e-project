@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" referrerpolicy="no-referrer" />
+
+    <title>Hudson Furniture</title>
+</head>
+<style>
+  .card{
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+  }
+  .card:hover{
+    transform: translateY(20px);
+  }
+.card:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,176,155,0.5),(150,201,61,1));
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 1;
+}
+.card:hover:before{
+  opacity: 1;
+}
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card .info{
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s  all;
+}
+.card:hover .info{
+  opacity: 1;
+  transform: translateY(0px);
+} 
+.card .info 
+
+
+
+
+
+ footer{
+    margin-top: 100px;
+    background-color: darkseagreen;
+    color: black;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.footer a{
+    color: white;
+    text-decoration: solid;
+}
+.awe{
+  text-align: center;
+  margin-top: 30px;
+  margin-left: -20px;
+}
+i{
+  padding: 10px;
+  font-size: 30px;
+}
+.awe a{
+  color: white;
+}
+.awesome i{
+  padding: 30px;
+  font-size: 15px;
+}
+.awesome{
+  color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+/* .card1{
+  border-radius: 8px;
+}
+.card1:hover{
+  transition:0.5s;
+  box-shadow: 10px 12px 16px darkseagreen;
+} */
+.card:hover{
+    box-shadow: 10px 10px 25px darkseagreen;
+    transition: 0.2s;
+    
+    
+}
+#BED{
+    width: 500PX;
+    height: 250PX;
+    margin-left: 200px;
+    margin-top: 150px;
+    border-radius: 10px;
+    background-color: rgb(212, 233, 255);
+    box-shadow: 5px 5px 10px rgb(200, 200, 200) ;
+    border: none;
+   }
+   #liv{
+    width: 800PX;
+    height: 300PX;
+    margin-left: 200px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgb(244, 239, 247);
+    box-shadow: 5px 5px 10px rgb(200, 200, 200) ;
+    border: none
+   }
+   #decor{
+    width: 300PX;
+    height: 610PX;
+    margin-left: 1060px;
+    margin-top: -610px;
+    border-radius: 10px;
+    background-color: rgb(229, 222, 246);
+    box-shadow: 5px 5px 10px rgb(200, 200, 200) ;
+    border: none
+   }
+   #bath{
+    width: 250PX;
+    height: 250PX;
+    margin-left: 750px;
+    margin-top: -600px;
+    border-radius: 10px;
+    background-color: rgb(212, 247, 255);
+    box-shadow: 5px 5px 10px rgb(200, 200, 200) ;
+    border: none
+   }
+   #out{
+    width: 450PX;
+    height: 510PX;
+    margin-left: 200px;
+    margin-top: 400px;
+    border-radius: 10px;
+    background-color: rgb(236, 255, 236);
+    box-shadow: 5px 5px 10px rgb(200, 200, 200) ;
+    border: none
+   }
+   #dining{
+    width: 630PX;
+    height: 220PX;
+    margin-left: 730px;
+    margin-top: -510px;
+    border-radius: 10px;
+    background-color: rgb(254, 248, 210);
+    box-shadow: 5px 5px 10px rgb(200, 200, 200) ;
+    border: none
+   }
+   #office{
+    width: 630PX;
+    height: 250PX;
+    margin-left: 730px;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: rgb(244, 227, 207);
+    box-shadow: 5px 5px 10px rgb(200, 200, 200) ;
+    border: none
+   }
+
+
+
+
+</style>
+<body>
+    <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <a style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+          font-size: 30px; margin-left: 40px; font-weight: bolder; color: darkseagreen;" class="navbar-brand" href="#">HUDSON FURNISHING</a>
+           <!-- <form style="margin-bottom:12px; margin-left:-300px;" class="d-flex mt-3" role="search">
+            <input style="width:400px;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button style="background-color:darkseagreen; color: white; border:none; text-align: center;" class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+          <button style="color:darkseagreen ;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div style="color:darkseagreen;" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HUDSON FURNISHING</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="project.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <ul style="margin-top:80px; background-color: darkseagreen;"  class="nav justify-content-center">
+        <li class="nav-item">
+          <a style="color:white; padding-right:50px;" class="nav-link active" aria-current="page" href="project.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:white;  padding-right:50px;" class="nav-link" href="faqs.html">FAQS</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:white;  padding-right:50px;" class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a style="color:white;  padding-right:50px;" class="nav-link" href="sign.html">Sign Up</a>
+          </li>
+       </ul>
+
+
+
+       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div style="height:500px;" class="carousel-item active" data-bs-interval="10000">
+            <img src="s (2).jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div style="height:500px;" class="carousel-item" data-bs-interval="2000">
+            <img src="s21.jpg"ng class="d-block w-100" alt="...">
+          </div>
+          <div style="height:500px;" class="carousel-item">
+            <img src="kk.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div style="height:500px;" class="carousel-item">
+            <img src="s (1).jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div style="height:500px;" class="carousel-item">
+            <img src="b.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div><br><br><br><br>
+      
+
+      <div>
+        <h1 style="text-align:center; color: darkseagreen;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">SHOP BY CATEGORY</h1>
+      </div>
+
+      <div id="BED"><a href="bedroom.html" style="text-decoration: none;">
+        <img src="bed-removebg-preview.png" alt="" width="250px" style="margin-left: 30px;">
+          <h3 style="color:rgb(82, 82, 82);  margin-left:300px; margin-top:-225px; font-size: 35px;" >BEDROOM</h3>
+          <h5 style="margin-left:370px; color:rgb(82, 82, 82);">Shop Now</h5>
+      </a></div>
+ 
+        <div id="liv"><a href="living.html" style="text-decoration: none;">
+         <img src="sofa-removebg-preview.png" alt="" width="450px" style="margin-left: 200px; margin-top: 30px;">
+          <h3 style="color:rgb(82, 82, 82); margin-left:50px; margin-top:-300px; font-size: 35px;" >LIVING ROOM</h3>
+          <h5 style="margin-left:60px; color:rgb(82, 82, 82);">Shop Now</h5>
+         </a></div>
+ 
+         <div id="decor"><a href="decor.html" style="text-decoration: none;">
+         <img src="decor-removebg-preview.png" alt="" height="600px" style="margin-left: -150px;">
+          <h3 style="color:rgb(82, 82, 82); margin-left:120px; margin-top:-300px; font-size: 35px;" >DECOR</h3>
+          <h5 style="margin-left:140px; color:rgb(82, 82, 82);">Shop Now</h5>
+         </a></div>
+ 
+         <div id="bath"><a href="bath.html" style="text-decoration: none;">
+         <img src="bathroom-removebg-preview.png" alt="" width="170px" style="margin-left: 60px; margin-top:115px;">
+          <h3 style="color:rgb(82, 82, 82); margin-left:15px; margin-top:-215px; font-size: 30px;" >BATHROOM</h3>
+          <h5 style="margin-left:20px; color:rgb(82, 82, 82);">Shop Now</h5>
+         </a></div>
+ 
+         <div id="out"><a href="out.html" style="text-decoration: none;">
+         <img src="out-removebg-preview.png" alt="" height="400px" style="margin-left: 50px; margin-top:120px;">
+          <h3 style="color:rgb(82, 82, 82); margin-left:60px; margin-top:-500px; font-size: 35px;" >OUTDOOR</h3>
+          <h5 style="margin-left:70px; color:rgb(82, 82, 82);">Shop Now</h5>
+         </a></div>
+ 
+         <div id="dining"><a href="dinning.html" style="text-decoration: none;">
+         <img src="dining-removebg-preview.png" alt="" height="350px" style="margin-left: 200px; margin-top:-120px;">
+          <h3 style="color:rgb(82, 82, 82); margin-left:40px; margin-top:-220px; font-size: 35px;" >DINING ROOM</h3>
+          <h5 style="margin-left:50px; color:rgb(82, 82, 82);">Shop Now</h5>
+         </a></div>
+ 
+         <div id="office"><a href="office.html" style="text-decoration: none;">
+         <img src="office-removebg-preview.png" alt="" height="300px" style="margin-left: 230px; margin-top:-35px;">
+          <h3 style="color:rgb(82, 82, 82); margin-left:30px; margin-top:-230px; font-size: 35px;" >OFFICE</h3>
+          <h5 style="margin-left:40px; color:rgb(82, 82, 82);">Shop Now</h5>
+         </a></div><br><br><br><br><br><br><br>
+
+      <!-- <div>
+
+        <div class="card1" style="width: 180px; height: 200px; border:solid darkseagreen 3px; margin-left: 300px;">
+        <h5 class="h5" style="text-align:center; margin-top:85px; color:darkseagreen;">BEDS</h5>
+        </div>
+        <div class="card1" style="width: 180px; height: 200px; border:solid darkseagreen 3px; margin-left:550px; margin-top:-200px ;">
+          <h5 style="text-align:center; margin-top:85px; color:darkseagreen">SOFAS</h5>
+        </div>
+        <div class="card1" style="width: 180px; height: 200px; border:solid darkseagreen 3px; margin-left: 800px; margin-top:-200px;">
+          <h5 style="text-align:center; margin-top:85px; color:darkseagreen">TABLES</h5>
+        </div>
+        <div class="card1" style="width: 180px; height: 200px; border:solid darkseagreen 3px;margin-left: 1050px; margin-top:-200px;">
+          <h5 style="text-align:center; margin-top:85px; color:darkseagreen">DECOR</h5>
+        </div>
+        <div class="card1" style="width: 180px; height: 200px; border:solid darkseagreen 3px; margin-left: 300px; margin-top:100px ;">
+          <h5 style="text-align:center; margin-top:85px; color:darkseagreen">WARDROBES</h5>
+        </div>
+        <div class="card1" style="width: 180px; height: 200px; border:solid darkseagreen 3px; margin-left: 550px;  margin-top:-200px ;">
+          <h5 style="text-align:center; margin-top:85px; color:darkseagreen">SEATING</h5>
+        </div>
+        <div class="card1" style="width: 180px; height: 200px; border:solid darkseagreen 3px; margin-left: 800px;  margin-top:-200px ;">
+          <h5 style="text-align:center; margin-top:85px; color:darkseagreen">BOOKSHELVES</h5>
+        </div>
+        <div class="card1" style="width: 180px; height: 200px; border:solid darkseagreen 3px; margin-left: 1050px;  margin-top:-200px ;">
+          <h5 style="text-align:center; margin-top:85px; color:darkseagreen;">DINING</h5>
+        </div>
+
+
+      </div><br><br><br><br><br> -->
+
+      <div>
+        <h1 style="text-align:center; color: darkseagreen;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">NEW ARRIVALS</h1>
+      </div><br><br><br><br>
+
+        <div>
+
+        <div class="card" style="width: 18rem; height: 400px; margin-left:250px;">
+          <img src="NA1.jpg" height="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text">Fusion Media Unit</h5><br>
+            <h5 style="color: darkseagreen;">PKR  21,999</h5>
+            
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 400px; margin-left:630px; margin-top:-400px;">
+          <img src="NA2.webp" height="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text">Royal Wing Chair in Blue Color</h5><br>
+            <h5 style="color: darkseagreen;">PKR  24,999</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 400px; margin-left:1000px; margin-top: -400px;">
+          <img src="NA3.jpg" height="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text">6 Seater Dining Table</h5><br>
+            <h5 style="color: darkseagreen;">PKR  49,999</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 400px; margin-left:250px; margin-top: 100px;">
+          <img src="NA4.jpg" height="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text">6 Drawer Solid Wood Dresser</h5><br>
+            <h5 style="color: darkseagreen;">PKR  31,499</h5>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 400px; margin-left:630px; margin-top:-400px;">
+          <img src="NA5.webp" height="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text">Bamboo Chair</h5><br>
+            <h5 style="color: darkseagreen;">PKR  4,999</h5>
+          </div>
+        </div>
+        
+        <div class="card" style="width: 18rem; height: 400px; margin-left:1000px; margin-top: -400px;">
+          <img src="NA6.webp" height="250px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-text">Custom made wooden Entertainment Unit</h5><br>
+            <h5 style="color: darkseagreen;">PKR  19,999</h5>
+          </div>
+        </div>
+
+        </div><br><br><br><br><br><br>
+
+        <hr style="color:darkseagreen; width:1450px; border:solid 1px; margin-left:35px;"><br><br><br><br><br>
+
+        
+
+        <hr style="color:darkseagreen; width:1450px; border:solid 1px; margin-left:35px;">
+
+    
+
+      <footer>
+        <div class="footer">
+         
+            <div>
+                <ul>
+                  <h3 style="margin-top:50px; color: white;">INFORMATION</h3>
+                    <a href="About.html"><li>About Us</li></a>
+                    <a href="pay.html"><li>Payments</li></a>
+                    <a href="shipping.html"><li>Shipping</li></a>
+                    <a href="dealer.html"><li>Authorized Dealers</li></a>
+                   
+                </ul>
+            </div>  
+            <div>
+              <ul>
+                <h3 style="margin-top:50px; color:white;">POLICY</h3>
+                <a href="terms.html"><li>Terms of Use</li></a>
+                <a href="privacy.html"><li>Privacy Policy</li></a>
+              </ul>
+            </div>              
+            <div>
+                <ul>
+                  <h3 style="margin-top:50px; color: white;">CONTACT INFO</h3>
+                    <li style="color:white;">021-111-007-007</li>
+                    <li style="color:white;">complaints@hudson.com</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                  <h3 style="margin-top:50px; color: white;">FOLLOW US</h3>
+                    <div class="awe">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest"></i></i></a>
+                    </div><br><br>
+                    <p style="color:white;">Subscribe to our newsletter <br>to get the latest news<br> and
+                     product updates directly<br> to
+                    your email. Just a<br> second to subscribe today.
+
+                    </p>
+                    <div>
+                      <h5 style="color:white;">Rate Us</h5>
+                      <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div>
+                    </div>
+                </ul>
+            </div>   
+
+          
+        </div>
+  
+         <br><br><br>
+          <hr style="color:white; width:1450px; border:solid 2px; margin-left:35px;">
+  
+        <div class="awesome">
+          <i class="fa-regular fa-copyright"></i>
+          Hudson Furniture 2022. All Right Reserved
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" referrerpolicy="no-referrer" />
+    <title>Payment</title>
+</head>
+<style>
+    footer{
+       margin-top: 100px;
+       background-color: darkseagreen;
+       color: black;
+   }
+   .footer{
+       display: flex;
+       justify-content: space-around;
+   }
+   
+   .footer ul li{
+       text-decoration: none;
+       list-style: none;
+       margin-top: 20px;
+       margin-right: 100px;
+   }
+   .footer a{
+       color: white;
+       text-decoration: solid;
+   }
+   .awe{
+     text-align: center;
+     margin-top: 30px;
+     margin-left: -20px;
+   }
+   i{
+     padding: 10px;
+     font-size: 30px;
+   }
+   .awe a{
+     color: white;
+   }
+   .awesome i{
+     padding: 30px;
+     font-size: 15px;
+   }
+   .awesome{
+     color: white;
+   }
+   *{
+       margin: 0;
+       padding: 0;
+   }
+   .rate {
+       float: left;
+       height: 46px;
+       padding: 0 10px;
+   }
+   .rate:not(:checked) > input {
+       position:absolute;
+       top:-9999px;
+   }
+   .rate:not(:checked) > label {
+       float:right;
+       width:1em;
+       overflow:hidden;
+       white-space:nowrap;
+       cursor:pointer;
+       font-size:30px;
+       color:#ccc;
+   }
+   .rate:not(:checked) > label:before {
+       content: '★ ';
+   }
+   .rate > input:checked ~ label {
+       color: #ffc700;    
+   }
+   .rate:not(:checked) > label:hover,
+   .rate:not(:checked) > label:hover ~ label {
+       color: #deb217;  
+   }
+   .rate > input:checked + label:hover,
+   .rate > input:checked + label:hover ~ label,
+   .rate > input:checked ~ label:hover,
+   .rate > input:checked ~ label:hover ~ label,
+   .rate > label:hover ~ input:checked ~ label {
+       color: #c59b08;
+   }
+
+   .card:hover{
+       box-shadow: 10px 10px 25px darkseagreen;
+       transition: 0.5s;
+       
+       
+   }
+   </style>
+
+<body>
+    <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <a style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+          font-size: 30px; margin-left: 40px; font-weight: bolder; color: darkseagreen;" class="navbar-brand" href="#">HUDSON FURNISHING</a>
+           <!-- <form style="margin-bottom:12px; margin-left:-300px;" class="d-flex mt-3" role="search">
+            <input style="width:400px;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button style="background-color:darkseagreen; color: white; border:none; text-align: center;" class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+          <button style="color:darkseagreen ;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div style="color:darkseagreen;" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HUDSON FURNISHING</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="project.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <ul style="margin-top:80px; background-color: darkseagreen;"  class="nav justify-content-center">
+        <li class="nav-item">
+          <a style="color:white; padding-right:50px;" class="nav-link active" aria-current="page" href="project.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:white;  padding-right:50px;" class="nav-link" href="faqs.html">FAQS</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:white;  padding-right:50px;" class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a style="color:white;  padding-right:50px;" class="nav-link" href="sign.html">Sign Up</a>
+          </li>
+       </ul>
+
+
+       
+
+       <div style="width:1200px; margin-left:150px; margin-top: 100px;">
+        <h3 style=" color:darkseagreen">Hudson Furnishing Payment Plans</h3><br>
+        <p style="color:black;">Interwood uses advanced data encryption to ensure that all
+             your online transactions are 100% safe and secure. For more information, feel 
+             free to read the details about our payment methods and security measures. We 
+             appreciate your confidence and encourage you to continue your online shopping
+              experience with complete peace of mind.</p>
+       </div>
+
+       <div style="width:1200px; margin-left:150px; margin-top: 100px;">
+        <h3 style=" color:darkseagreen">Payment Methods:</h3><br>
+        <p style="color:black;">At Interwood, we aim to ensure that your payment process
+             is as simple and seamless as possible. That is why we offer multiple payment options for your ease:<br>
+
+            We accept the following payment methods:<br>
+            
+            • Debit or Credit Card (Visa and Master powered only)<br>
+            • Online transfer by bank<br>
+            • Cash Payment on Delivery (Valid on orders of accessories only up to PKR 25,000)<br>
+            • Payment in Installments<br>
+            No matter which method of payment you choose, you can rest assured that our
+             secure payment gateway partners use advanced encryption technology to protect 
+             all your transactions at all times. We also guarantee that all of your transactions 
+             details are also kept 100% private.</p>
+       </div>
+
+       <div style="width:1200px; margin-left:150px; margin-top: 100px;">
+        <h3 style=" color:darkseagreen">How to Pay Online:</h3><br>
+        <p style="color:black;">Follow these instructions while paying online at Hudson.pk:<br>
+
+            • Log on to www.Hudson.pk<br>
+            • Browse through our website, select the product(s) that you would like to purchase and add them to your cart<br>
+            • Click on “Checkout.”<br>
+            • Create an account by entering your details (one time only) or continue as “Guest”<br>
+            • Lastly, continue to shipping method and enter your card details for the most secure payment.</p>
+       </div>
+
+       <div style="width:1200px; margin-left:150px; margin-top: 100px;">
+        <h3 style=" color:darkseagreen">Payment security:</h3><br>
+        <p style="color:black;">Hudson Furnishing utilizes data encryption and online security 
+            protocols that prevent fraudulent credit and debit card use. We also regularly
+             perform thorough security checks on all orders received. These checks include
+              issuance of a code against your order and also a follow-up email or phone call
+               for confirmation prior to processing your order.<br>
+
+            Our advanced security systems encrypt all electronic transactions and payments 
+            in accordance with international data protection standards, ensuring that al
+            l your information remains safe at every step of your transaction. We also ensure
+             that your card information remains protected while it is transmitted to the respective
+              banks for payment processing. To provide an additional layer of security, all online
+               translations are also authenticated by Visa (for Visa Cards), MasterCard Secure Code
+                (for MasterCard & Maestro cards).<br>
+            
+            So continue shopping online on Hudson.pk with complete peace of mind or feel free 
+            to visit any of our nationwide showrooms to experience our furniture in person. For
+             more information, contact our call center representatives at 021-111-007-007.</p>
+       </div>
+
+
+
+       <footer>
+        <div class="footer">
+         
+            <div>
+                <ul>
+                  <h3 style="margin-top:50px; color: white;">INFORMATION</h3>
+                    <a href="About.html"><li>About Us</li></a>
+                    <a href="pay.html"><li>Payments</li></a>
+                    <a href="shipping.html"><li>Shipping</li></a>
+                    <a href="dealer.html"><li>Authorized Dealers</li></a>
+                   
+                </ul>
+            </div>  
+            <div>
+              <ul>
+                <h3 style="margin-top:50px; color:white;">POLICY</h3>
+                <a href="terms.html"><li>Terms of Use</li></a>
+                <a href="privacy.html"><li>Privacy Policy</li></a>
+              </ul>
+            </div>              
+            <div>
+                <ul>
+                  <h3 style="margin-top:50px; color: white;">CONTACT INFO</h3>
+                    <li style="color:white;">021-111-007-007</li>
+                    <li style="color:white;">complaints@hudson.com</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                  <h3 style="margin-top:50px; color: white;">FOLLOW US</h3>
+                    <div class="awe">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest"></i></i></a>
+                    </div><br><br>
+                    <p style="color:white;">Subscribe to our newsletter <br>to get the latest news<br> and
+                     product updates directly<br> to
+                    your email. Just a<br> second to subscribe today.
+
+                    </p>
+                    <div>
+                      <h5 style="color:white;">Rate Us</h5>
+                      <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div>
+                    </div>
+                </ul>
+            </div>   
+
+          
+        </div>
+  
+         <br><br><br>
+          <hr style="color:white; width:1450px; border:solid 2px; margin-left:35px;">
+  
+        <div class="awesome">
+          <i class="fa-regular fa-copyright"></i>
+          Hudson Furniture 2022. All Right Reserved
+        </div>
+    </footer>
+</body>
+</html>

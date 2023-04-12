@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" referrerpolicy="no-referrer" />
+    <title>Shipping</title>
+</head>
+<style>
+    footer{
+       margin-top: 100px;
+       background-color: darkseagreen;
+       color: black;
+   }
+   .footer{
+       display: flex;
+       justify-content: space-around;
+   }
+   
+   .footer ul li{
+       text-decoration: none;
+       list-style: none;
+       margin-top: 20px;
+       margin-right: 100px;
+   }
+   .footer a{
+       color: white;
+       text-decoration: solid;
+   }
+   .awe{
+     text-align: center;
+     margin-top: 30px;
+     margin-left: -20px;
+   }
+   i{
+     padding: 10px;
+     font-size: 30px;
+   }
+   .awe a{
+     color: white;
+   }
+   .awesome i{
+     padding: 30px;
+     font-size: 15px;
+   }
+   .awesome{
+     color: white;
+   }
+   *{
+       margin: 0;
+       padding: 0;
+   }
+   .rate {
+       float: left;
+       height: 46px;
+       padding: 0 10px;
+   }
+   .rate:not(:checked) > input {
+       position:absolute;
+       top:-9999px;
+   }
+   .rate:not(:checked) > label {
+       float:right;
+       width:1em;
+       overflow:hidden;
+       white-space:nowrap;
+       cursor:pointer;
+       font-size:30px;
+       color:#ccc;
+   }
+   .rate:not(:checked) > label:before {
+       content: '★ ';
+   }
+   .rate > input:checked ~ label {
+       color: #ffc700;    
+   }
+   .rate:not(:checked) > label:hover,
+   .rate:not(:checked) > label:hover ~ label {
+       color: #deb217;  
+   }
+   .rate > input:checked + label:hover,
+   .rate > input:checked + label:hover ~ label,
+   .rate > input:checked ~ label:hover,
+   .rate > input:checked ~ label:hover ~ label,
+   .rate > label:hover ~ input:checked ~ label {
+       color: #c59b08;
+   }
+
+   .card:hover{
+       box-shadow: 10px 10px 25px darkseagreen;
+       transition: 0.5s;
+       
+       
+   }
+   </style>
+
+<body>
+    <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <a style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+          font-size: 30px; margin-left: 40px; font-weight: bolder; color: darkseagreen;" class="navbar-brand" href="#">HUDSON FURNISHING</a>
+           <!-- <form style="margin-bottom:12px; margin-left:-300px;" class="d-flex mt-3" role="search">
+            <input style="width:400px;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button style="background-color:darkseagreen; color: white; border:none; text-align: center;" class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+          <button style="color:darkseagreen ;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div style="color:darkseagreen;" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HUDSON FURNISHING</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="project.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <ul style="margin-top:80px; background-color: darkseagreen;"  class="nav justify-content-center">
+        <li class="nav-item">
+          <a style="color:white; padding-right:50px;" class="nav-link active" aria-current="page" href="project.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:white;  padding-right:50px;" class="nav-link" href="faqs.html">FAQS</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:white;  padding-right:50px;" class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a style="color:white;  padding-right:50px;" class="nav-link" href="sign.html">Sign Up</a>
+          </li>
+       </ul>
+
+
+       <h2 style="margin-left:150px; margin-top:100px; color:darkseagreen;">SHIPPING</h2>
+
+       <div style="width:1200px; margin-left:150px; margin-top: 100px;">
+        <h3 style=" color:darkseagreen">• Do you ship to my city and location?</h3><br><br>
+        <p style="color:black;">For a superlative customer experience, we have decided to deliver each product personally.<br>
+
+            • Furniture Items: We currently deliver in Karachi, Lahore, Islamabad, Rawalpindi, Gujranwala and Peshawar.
+             We are coming to other cities very soon and will keep you posted!<br>
+            • Home Decor Accessories: We currently deliver in Karachi, Lahore, Islamabad, 
+            Rawalpindi, Gujranwala, Peshawar, Sialkot, Faisalabad, Multan, Hyderabad, Sargodha and Sahiwal. </p>
+       </div>
+
+    
+
+       <div style="width:1200px; margin-left:150px; margin-top: 100px;">
+        <h3 style=" color:darkseagreen">• What is the estimated delivery time of an online order?</h3><br><br>
+        <p style="color:black;">• Online orders are processed, delivered and installed (if needed) within 
+            3 to 6 working days of receiving the payment<br>
+            • While we try to ensure that the product reaches you within the delivery time communicated, 
+            exigencies may delay the delivery. In such cases, please do not worry. Get in touch with us
+             via Call or WhatsApp on 0321-0025987 or 0334-5478598 (9:00am to 5:30pm Mon to Sat) for the 
+             latest update on your shipment, if we have already not gotten in touch with you.<br>
+             • Order delivery may take 8-12 working days during the Sale period.</p>
+       </div>
+
+      
+
+       <div style="width:1200px; margin-left:150px; margin-top: 100px;">
+        <h3 style=" color:darkseagreen">• Are there any shipping charges or any additional hidden charges?</h3><br><br>
+        <p style="color:black;">Standard shipping & fixing charges shall apply on all furniture items
+             for Karachi, Lahore, Islamabad, Rawalpindi, Gujranwala and Peshawar.<br>
+
+            Shipping Charges = 2.5% of total order value<br>
+            
+            Fixing Charges = 2.5% of total order value<br>
+            
+            No shipping charges on Decor items.</p>
+       </div>
+
+    
+
+       <div style="width:1200px; margin-left:150px; margin-top: 100px;">
+        <h3 style=" color:darkseagreen">• How do I track my Online order?</h3><br><br>
+        <p style="color:black;">• We try our best to deliver your product before you can even think 
+            'Where is it now?' :) i.e. well within 3 to 5 working days of receiving payment
+             (or 15 to 20 working days in the case of arranging stock from external warehouse). <br>
+             • In case of any delay, we proactively call / email the customer to inform them the status of their order.
+        </p>
+       </div>
+
+     
+       <div style="width:1200px; margin-left:150px; margin-top: 100px;">
+        <h3 style=" color:darkseagreen">• What should I check when the product is delivered to me?</h3><br><br>
+        <p style="color:black;">• Please check for all the following items before signing Final 
+            Finish Report (FFR) when the product is delivered and installed:<br>
+            • Please check on all external surfaces across the product for any breakages, cracks, 
+            chip-offs, unfinished patches, or borer / insect infestations.<br>
+            • In case there is some dust or a lack of shine, our installation team will be able to
+             fix this immediately by applying a coat of wood polish or by rubbing the surface with 
+             a cloth; this is an accepted industry-standard method for cleaning the surface / polishing it.<br>
+             • For all products that involve assembly, please ensure that our installation team 
+            visits on next working day of delivery to assemble the delivered product(s), and
+             all nuts and bolts are present and they fit well.<br>
+             • For all products that require wall installation, kindly decide prior to the
+             installation team's visit on the exact location in your house where you would
+              want to place your product, and instruct the installation team to fix the 
+              product; please ensure that you have taken all necessary approvals prior for 
+              any drilling etc. that may be required to fix wall items in your apartment / home.<br>
+              • For all products kept on the floor, ensure that the product stands steady and 
+            straight. In case there is an uneven leg (less than 5 mm difference), then our
+             team will install bushes at the foot of that leg to balance the product better;
+              in case the uneven leg is more than 5 mm, then we will take the item back to
+               provide a replacement (or a repair) based on extent of change needed.<br>
+               • For all seating products, kindly sit on the item to ensure that the structure is 
+            stable with your weight on it.<br>
+            • We make sure that the internal areas of storage products are well finished to
+             not have any loose pieces / splinters to hurt your arms; however the extent of
+              polish of internal areas may not match with the extent of polish on external areas.<br>
+              • Wood has natural qualities such as differing grain patterns, minimal stain 
+            differences and small knots - small knots which structurally don't impact 
+            the product will be fully filled with putty and polished to make sure that
+             they don't hamper the product; knots that alter structural stability of
+              the product would be rejected at the quality control stage; differing 
+              grain patterns and stain differences are generally acceptable on hard wood products.<br>
+              • Hard wood products may expand a small extent during the summer months because of
+             which some drawers may get stuck! There is nothing to worry on this 
+             front - if you give a call to our customer care team, our after-sales 
+             service team will come and minimize the expansion effect by sanding 
+             (using sand paper) on the sides of the product<br>
+             • Once the product is delivered and our delivery/installation team leaves
+             your location, we will be able to only honor manufacturing defects and 
+             other fair usage breakages as described by the warranty policy.</p>
+       </div>
+
+
+       <div style="width:1200px; margin-left:150px; margin-top: 100px;">
+        <h3 style="color:darkseagreen">• What if I have received a damaged product?</h3><br><br>
+        <p style="color:black;">• We work with sellers who have highly specialized 
+            quality control measures that ensure that the product is up to our
+             standards when you receive the product. In case, you receive a damaged 
+             product (damage as defined by the situations in the prior question), 
+             please bring it to the notice of the delivery personnel immediately. 
+             In case you notice an issue later, please get in touch with us on our
+              customer care number (021-111-007-007) or write to us at complaints@hudson.com.<br>
+              • Our team will assess the damage and revert within stipulated time with a
+             solution. We will either replace the piece or take any other corrective measure to solve the problem.</p>
+       </div>
+
+     
+       <div style="width:1200px; margin-left:150px; margin-top: 100px;">
+        <h3 style="color:darkseagreen">• What if I do not like the product or cannot take delivery of my order? Can I cancel the order?</h3><br><br>
+        <p style="color:black;">• We, at Hudson Mobel, work to ensure that you 
+            get what you see on our website. We do not offer exchanges 
+            (unless the product was damaged on arrival and we are unable 
+            to replace the item) and refunds for order cancellations.</p>
+       </div>
+
+
+       <div style="width:1200px; margin-left:150px; margin-top: 100px;">
+        <h3 style=" color:darkseagreen">• FOR ALL PRODUCTS</h3><br><br>
+        <p style="color:black;">• Once we have delivered the product and 
+            left the customer's premises, we will NOT be able to accommodate 
+            any cancellation or change. We request the customer to personally
+             be present during delivery to ensure that they check the furniture
+              at the time of delivery. Our delivery staff will assist the customers with any questions they have.</p>
+       </div><br><br>
+
+
+
+       <footer>
+        <div class="footer">
+         
+            <div>
+                <ul>
+                  <h3 style="margin-top:50px; color: white;">INFORMATION</h3>
+                    <a href="About.html"><li>About Us</li></a>
+                    <a href="pay.html"><li>Payments</li></a>
+                    <a href="shipping.html"><li>Shipping</li></a>
+                    <a href="dealer.html"><li>Authorized Dealers</li></a>
+                   
+                </ul>
+            </div>  
+            <div>
+              <ul>
+                <h3 style="margin-top:50px; color:white;">POLICY</h3>
+                <a href="terms.html"><li>Terms of Use</li></a>
+                <a href="privacy.html"><li>Privacy Policy</li></a>
+              </ul>
+            </div>              
+            <div>
+                <ul>
+                  <h3 style="margin-top:50px; color: white;">CONTACT INFO</h3>
+                    <li style="color:white;">021-111-007-007</li>
+                    <li style="color:white;">complaints@hudson.com</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                  <h3 style="margin-top:50px; color: white;">FOLLOW US</h3>
+                    <div class="awe">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest"></i></i></a>
+                    </div><br><br>
+                    <p style="color:white;">Subscribe to our newsletter <br>to get the latest news<br> and
+                     product updates directly<br> to
+                    your email. Just a<br> second to subscribe today.
+
+                    </p>
+                    <div>
+                      <h5 style="color:white;">Rate Us</h5>
+                      <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div>
+                    </div>
+                </ul>
+            </div>   
+
+          
+        </div>
+  
+         <br><br><br>
+          <hr style="color:white; width:1450px; border:solid 2px; margin-left:35px;">
+  
+        <div class="awesome">
+          <i class="fa-regular fa-copyright"></i>
+          Hudson Furniture 2022. All Right Reserved
+        </div>
+    </footer>
+</body>
+</html>

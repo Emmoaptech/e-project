@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" referrerpolicy="no-referrer" />
+    <title>Term</title>
+</head>
+<style>
+    footer{
+       margin-top: 100px;
+       background-color: darkseagreen;
+       color: black;
+   }
+   .footer{
+       display: flex;
+       justify-content: space-around;
+   }
+   
+   .footer ul li{
+       text-decoration: none;
+       list-style: none;
+       margin-top: 20px;
+       margin-right: 100px;
+   }
+   .footer a{
+       color: white;
+       text-decoration: solid;
+   }
+   .awe{
+     text-align: center;
+     margin-top: 30px;
+     margin-left: -20px;
+   }
+   i{
+     padding: 10px;
+     font-size: 30px;
+   }
+   .awe a{
+     color: white;
+   }
+   .awesome i{
+     padding: 30px;
+     font-size: 15px;
+   }
+   .awesome{
+     color: white;
+   }
+   *{
+       margin: 0;
+       padding: 0;
+   }
+   .rate {
+       float: left;
+       height: 46px;
+       padding: 0 10px;
+   }
+   .rate:not(:checked) > input {
+       position:absolute;
+       top:-9999px;
+   }
+   .rate:not(:checked) > label {
+       float:right;
+       width:1em;
+       overflow:hidden;
+       white-space:nowrap;
+       cursor:pointer;
+       font-size:30px;
+       color:#ccc;
+   }
+   .rate:not(:checked) > label:before {
+       content: '★ ';
+   }
+   .rate > input:checked ~ label {
+       color: #ffc700;    
+   }
+   .rate:not(:checked) > label:hover,
+   .rate:not(:checked) > label:hover ~ label {
+       color: #deb217;  
+   }
+   .rate > input:checked + label:hover,
+   .rate > input:checked + label:hover ~ label,
+   .rate > input:checked ~ label:hover,
+   .rate > input:checked ~ label:hover ~ label,
+   .rate > label:hover ~ input:checked ~ label {
+       color: #c59b08;
+   }
+
+   .card:hover{
+       box-shadow: 10px 10px 25px darkseagreen;
+       transition: 0.5s;
+       
+       
+   }
+   </style>
+
+<body>
+    <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid">
+          <a style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+          font-size: 30px; margin-left: 40px; font-weight: bolder; color: darkseagreen;" class="navbar-brand" href="#">HUDSON FURNISHING</a>
+           <!-- <form style="margin-bottom:12px; margin-left:-300px;" class="d-flex mt-3" role="search">
+            <input style="width:400px;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button style="background-color:darkseagreen; color: white; border:none; text-align: center;" class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+          <button style="color:darkseagreen ;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div style="color:darkseagreen;" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HUDSON FURNISHING</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="project.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <ul style="margin-top:80px; background-color: darkseagreen;"  class="nav justify-content-center">
+        <li class="nav-item">
+          <a style="color:white; padding-right:50px;" class="nav-link active" aria-current="page" href="project.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:white;  padding-right:50px;" class="nav-link" href="faqs.html">FAQS</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:white;  padding-right:50px;" class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a style="color:white;  padding-right:50px;" class="nav-link" href="sign.html">Sign Up</a>
+          </li>
+       </ul>
+
+       <h2 style="margin-left:150px; margin-top:100px; color:darkseagreen;">TERMS OF USE</h2>
+
+       <div style="width:1200px; margin-left:150px; margin-top: 100px;">
+        <br><br><br>
+        <p style="color:black;">•    We have done our best to display as accurately as possible the colors 
+            of the products shown on this Website. However, because the colors you see will depend on your 
+            monitor, we cannot guarantee that your monitor’s display of any color will be accurate.<br>
+            •    The photo may include additional props that are for display purpose only, and will not be included.<br>
+            •    The actual measurement maybe a little bit different than described due to manual measurement.<br>
+            •    100% advance payment is required at the time of booking for timely order processing of standard orders.<br>
+            •    Deliveries are made within 25 working days after receiving full payment at the concerned store. 
+            In case payment is made by cheque, the delivery will be made 25 working days after the amount is transferred.<br>
+            •    We will not cater cancelation of any order after payment received.<br>
+            •    Gift Card is not applicable on the category of Bazaar products.<br>
+            •    No return / refund will be applicable, if you receive the same product as seen on website in 
+            perfect condition, (change of mind is not applicable).<br>
+            •    In case customer delays order delivery beyond 30 days after the original delivery date, 
+            the order will be considered canceled and cancellation charges of 20% of order amount will be deducted.<br>
+            •    Any order can be changed or modified 10 days before delivery based on following conditions:<br><br><br>
+            
+            
+            1.    New order amount is greater or equal to original order.<br>
+            2.    New delivery date will be communicated according to products availability.<br>
+            3.    Order cannot be changed or modified after delivery.<br><br><br>
+            
+            
+            •    Delivery and delivery time:<br><br>
+            
+            
+            1.    All products in one order form will be delivered in one shipment.<br>
+            2.    All complaints in respect of incomplete delivery, defective or incorrect goods must be 
+            reported to United Retail (SMC-PVT) LTD. on feedback/complaint form (RED Form) at the time of 
+            delivery, if issues are not reported on feedback/complaint form than its assured that products
+             are delivered in excellent condition and complaint will not be catered.<br>
+            3.    Failure to inform the company of any alleged affect in accordance with clause 9 (b) shall
+             be conclusive evidence that company has satisfactorily performed its obligations and that the 
+             Products have been accepted without any defect, damage or incorrect quantity etc.<br>
+            4.    Delivery dates are submitted without liability for delay however occasioned. The company 
+            will in no case, be liable for any compensation / damage / refund of advance etc. for any deliveries 
+            which are made beyond the delivery date and time.<br><br><br>
+            
+            
+            •    United Retail (SMC-PVT) LTD. will not be responsible for any damage caused while taking goods 
+            through narrow corridors and stairwells.<br>
+            •    Deliveries above ground floor will be charged extra amount in case there is no cargo elevator available.<br>
+            •    Standard orders will be booked within 60 days.<br>
+            •    United Retail (SMC-PVT) LTD. will not be liable for any advance orders beyond 60 days in the
+             event of revision of prices, change in design, and discontinuation of product.<br><br>
+            
+            
+            United Retail (SMC-PVT) LTD. reserves the right for cancellation at the discretion of United Retail (SMC-PVT) LTD.<br><br>
+            
+            
+            •    We do not commit any kind of warranty for discounted/discontinued and imported outdoor furniture products.<br>
+            •    We do not allow customization/modification in our furniture products including installation
+             of locks, any customization/modification will void the product warranty.<br>
+            •    Goods once sold/delivered and accepted will not be taken back or exchanged.<br>
+            •    The company reserves the right unconditionally:<br><br>
+            
+            
+            To revise the product price.<br><br>
+            
+            
+            • To reduce the volume of products ordered by a purchases and will be charged accordingly.<br>
+            • To defer the date of any order delivery.<br>
+            • To cancel the order.<br><br>
+            
+            
+            United Retail (SMC-PVT) LTD. is prevented from or delayed in carrying on of its business
+             due to extraordinary unavoidable circumstances i.e. beyond the reasonable control of the
+              Company including, but not limited to war or national emergency, acts of terrorism, protest,
+               riots, fire, explosion, flood, epidemic, lock-outs, strikes or other labor disputes 
+               (whether or not relating to either party’s workforce), or restraints or delays affecting
+                carriers for or suppliers to the Company.<br><br>
+            
+            
+            All applicable government taxes will be applied at the time of delivery,</p>
+       </div><br><br><br>
+
+
+
+
+       <footer>
+        <div class="footer">
+         
+            <div>
+                <ul>
+                  <h3 style="margin-top:50px; color: white;">INFORMATION</h3>
+                    <a href="About.html"><li>About Us</li></a>
+                    <a href="pay.html"><li>Payments</li></a>
+                    <a href="shipping.html"><li>Shipping</li></a>
+                    <a href="dealer.html"><li>Authorized Dealers</li></a>
+                   
+                </ul>
+            </div>  
+            <div>
+              <ul>
+                <h3 style="margin-top:50px; color:white;">POLICY</h3>
+                <a href="terms.html"><li>Terms of Use</li></a>
+                <a href="privacy.html"><li>Privacy Policy</li></a>
+              </ul>
+            </div>              
+            <div>
+                <ul>
+                  <h3 style="margin-top:50px; color: white;">CONTACT INFO</h3>
+                    <li style="color:white;">021-111-007-007</li>
+                    <li style="color:white;">complaints@hudson.com</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                  <h3 style="margin-top:50px; color: white;">FOLLOW US</h3>
+                    <div class="awe">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest"></i></i></a>
+                    </div><br><br>
+                    <p style="color:white;">Subscribe to our newsletter <br>to get the latest news<br> and
+                     product updates directly<br> to
+                    your email. Just a<br> second to subscribe today.
+
+                    </p>
+                    <div>
+                      <h5 style="color:white;">Rate Us</h5>
+                      <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div>
+                    </div>
+                </ul>
+            </div>   
+
+          
+        </div>
+  
+         <br><br><br>
+          <hr style="color:white; width:1450px; border:solid 2px; margin-left:35px;">
+  
+        <div class="awesome">
+          <i class="fa-regular fa-copyright"></i>
+          Hudson Furniture 2022. All Right Reserved
+        </div>
+    </footer>
+</body>
+</html>
